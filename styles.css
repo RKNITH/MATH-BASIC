@@ -1,0 +1,117 @@
+/* Basic reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f2f5;
+}
+
+h1 {
+    margin-block: 30px;
+    color: #333;
+}
+
+/* Container for the entire content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Styling for each section (table, square, cube, etc.) */
+.container>div {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input styles */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Styles for placeholder text */
+input::placeholder {
+    color: #888;
+}
+
+/* Result container styling */
+#resultContainer {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+
+    overflow-y: scroll;
+
+
+}
+
+
+
+
+
+#backButton {
+    max-width: 30%;
+    margin-block: 30px;
+    display: none;
+
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #resultContainer {
+        width: 100%;
+    }
+}
